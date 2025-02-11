@@ -12,6 +12,12 @@ class LinkController
 {
     public function index() {
         $links = Link::all();
+
+        $links = $links->map(function ($link) {
+            $link->shortened_url = config('app.url') . '/' . $link->shortened_url;
+            return $link;
+        });
+
         return response()->json($links);
     }
 
@@ -25,16 +31,15 @@ class LinkController
 
         if ($link) {
             $link->touch();
-        } else {
-            $link = Link::create([
+        }
+        else {
+            Link::create([
                 'original_url' => $validated['original_url'],
                 'shortened_url' => substr(md5(uniqid()), 0, 6),
             ]);
         }
 
-        $link->save();
-
-        return Redirect::to("/links");
+        return response()->json("/links?created=true");
     }
 
     public function redirect($shortened_url) {

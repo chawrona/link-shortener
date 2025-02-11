@@ -4,7 +4,6 @@
     import Header from "../components/Header.vue";
     import LinkRow from "../components/LinkRow.vue";
 
-
     const links = ref([]);
 
     onMounted(async () => {
@@ -18,11 +17,16 @@
     <Header />
     <Navigation />
     <h3>Links</h3>
-
     <LinkRow v-for="(link, index) in links"
         :key="index"
         :original_url="link.original_url"
-        :shorten_url="link.shorten_url"
+        :shortened_url="link.shortened_url"
     />
 
 </template>
+
+<style scoped>
+    p {
+        color: green;
+    }
+</style>

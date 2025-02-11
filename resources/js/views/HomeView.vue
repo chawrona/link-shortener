@@ -1,20 +1,25 @@
 <script setup>
     import { ref } from 'vue';
+    import router from "../router/app";
     import Navigation from "../components/Navigation.vue";
     import Header from "../components/Header.vue";
 
     const original_url = ref("");
     const error = ref("");
 
-    const handleSubmit = () => {
+    const handleSubmit = async () => {
         error.value = "";
         try {
-            axios.post("/api/link", {original_url: original_url.value});
-        } catch (error) {
-            if (err.response && err.response.status === 422) error.value = "Wrong URL format.";
-            else error.value = "Something's wrong. Try again later";
+            const response = await axios.post("/api/link", { original_url: original_url.value });
+            router.push(response.data);
+        } catch (err) {
+            if (err.response && err.response.status === 422) {
+                error.value = "Wrong URL format.";
+            } else {
+                error.value = "Something's wrong. Try again later.";
+            }
         }
-    }
+    };
 
 </script>
 

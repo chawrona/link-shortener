@@ -1,7 +1,6 @@
 <?php
 
 use Illuminate\Http\Request;
-file_put_contents('request.log', print_r($_SERVER, true));
 
 define('LARAVEL_START', microtime(true));
 
