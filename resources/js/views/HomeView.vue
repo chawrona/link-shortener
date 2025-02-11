@@ -4,11 +4,17 @@
     import Header from "../components/Header.vue";
 
     const original_url = ref("");
-    const handleSubmit = () => axios.post("/api/link", original_url.value, {
-        headers: {
-            'X-CSRF-TOKEN': document.querySelector('meta[name="csrf-token"]').content
+    const error = ref("");
+
+    const handleSubmit = () => {
+        error.value = "";
+        try {
+            axios.post("/api/link", {original_url: original_url.value});
+        } catch (error) {
+            if (err.response && err.response.status === 422) error.value = "Wrong URL format.";
+            else error.value = "Something's wrong. Try again later";
         }
-    });
+    }
 
 </script>
 
@@ -16,6 +22,7 @@
 
     <Header />
     <Navigation />
+    <p v-if="error" class="error">{{ error }}</p>
     <form @submit.prevent="handleSubmit">
         <input type="text" placeholder="https://yourlink.com/verylongpath" v-model="original_url">
         <button type="submit">Shorten!</button>
@@ -52,5 +59,9 @@
         &:hover {
             background-color: #046b50;
         }
+    }
+
+    .error {
+        color: red;
     }
 </style>

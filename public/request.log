@@ -1,0 +1,40 @@
+Array
+(
+    [DOCUMENT_ROOT] => C:\Users\Thinkofistodo\Desktop\link-shortener\public
+    [REMOTE_ADDR] => 127.0.0.1
+    [REMOTE_PORT] => 58583
+    [SERVER_SOFTWARE] => PHP 8.2.12 Development Server
+    [SERVER_PROTOCOL] => HTTP/1.1
+    [SERVER_NAME] => 127.0.0.1
+    [SERVER_PORT] => 8000
+    [REQUEST_URI] => /api/link
+    [REQUEST_METHOD] => POST
+    [SCRIPT_NAME] => /index.php
+    [SCRIPT_FILENAME] => C:\Users\Thinkofistodo\Desktop\link-shortener\public\index.php
+    [PATH_INFO] => /api/link
+    [PHP_SELF] => /index.php/api/link
+    [HTTP_HOST] => 127.0.0.1:8000
+    [HTTP_CONNECTION] => keep-alive
+    [CONTENT_LENGTH] => 42
+    [HTTP_CONTENT_LENGTH] => 42
+    [HTTP_SEC_CH_UA_PLATFORM] => "Windows"
+    [HTTP_X_CSRF_TOKEN] => q2tGIL33afEhx35iRegTusFpzutP6fyygMsscmSb
+    [HTTP_X_XSRF_TOKEN] => eyJpdiI6IkFXc0dmVTNaQ3RwVmhhallRektXUkE9PSIsInZhbHVlIjoiU1B1Wkpkci9FenpyQ084eUdidUkzQXRyVjErMHZjOUJDTERoZ1JoUElZdkkrK1BybW81QnJJc0N1SGhEdUovUzJvQmwwd1VTU3NDOEVSMmQ4U05lU2VndGwzU3l1ZE1GRC90b0dIOGZFdU0xc2N5QkxOdWw1RzkwcEhDdUNzZVoiLCJtYWMiOiIwZjA2Y2M1ZGQzYTMxYmUwZDc3M2FjNTNiNTY0MzcxNDY4MWYxNjc0YmMxN2U5Njk1NmU5YjlmN2RmZGFjNjU2IiwidGFnIjoiIn0=
+    [HTTP_SEC_CH_UA] => "Not A(Brand";v="8", "Chromium";v="132", "Google Chrome";v="132"
+    [HTTP_SEC_CH_UA_MOBILE] => ?0
+    [HTTP_X_REQUESTED_WITH] => XMLHttpRequest
+    [HTTP_USER_AGENT] => Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36
+    [HTTP_ACCEPT] => application/json, text/plain, */*
+    [CONTENT_TYPE] => application/json
+    [HTTP_CONTENT_TYPE] => application/json
+    [HTTP_ORIGIN] => http://127.0.0.1:8000
+    [HTTP_SEC_FETCH_SITE] => same-origin
+    [HTTP_SEC_FETCH_MODE] => cors
+    [HTTP_SEC_FETCH_DEST] => empty
+    [HTTP_REFERER] => http://127.0.0.1:8000/
+    [HTTP_ACCEPT_ENCODING] => gzip, deflate, br, zstd
+    [HTTP_ACCEPT_LANGUAGE] => pl-PL,pl;q=0.9,en-GB;q=0.8,en;q=0.7,en-US;q=0.6
+    [HTTP_COOKIE] => XSRF-TOKEN=eyJpdiI6IkFXc0dmVTNaQ3RwVmhhallRektXUkE9PSIsInZhbHVlIjoiU1B1Wkpkci9FenpyQ084eUdidUkzQXRyVjErMHZjOUJDTERoZ1JoUElZdkkrK1BybW81QnJJc0N1SGhEdUovUzJvQmwwd1VTU3NDOEVSMmQ4U05lU2VndGwzU3l1ZE1GRC90b0dIOGZFdU0xc2N5QkxOdWw1RzkwcEhDdUNzZVoiLCJtYWMiOiIwZjA2Y2M1ZGQzYTMxYmUwZDc3M2FjNTNiNTY0MzcxNDY4MWYxNjc0YmMxN2U5Njk1NmU5YjlmN2RmZGFjNjU2IiwidGFnIjoiIn0%3D; laravel_session=eyJpdiI6IlN6a0hwSnhOK2t3VlFKbDljUXhabEE9PSIsInZhbHVlIjoiQnJzOHh0MkF3NnYxYmNVL3pReGl4amw0bG1EMkJtZXc3WDhrdk5abnlnOWEyS0htZEhFcVQ1eCtSMkpZSW5DdmxIbzU5dXFpWlBIMVdydjJTQnpVaitkRVNVMnRRYjhyb2dpLzFSYy82T3VpMGk5cVJyVkg5TXRPVUNBcGhZMmkiLCJtYWMiOiIyMmQyMzUwYWU0MTg5MDQ5ZmM3ZGNhYzNiOWMwNzVmZGI4NTg2Mjg1N2ZlNDRiNWRiMDQ1OThmY2MxMDZlZDJkIiwidGFnIjoiIn0%3D
+    [REQUEST_TIME_FLOAT] => 1739246433.9559
+    [REQUEST_TIME] => 1739246433
+)
