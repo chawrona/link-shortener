@@ -2,9 +2,11 @@
 
 namespace App\Http\Controllers;
 
+
 use App\Models\Link;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Redirect;
+use Illuminate\Support\Facades\Log;
 
 class LinkController
 {
@@ -14,6 +16,7 @@ class LinkController
     }
 
     public function store(Request $request) {
+        Log::info($request->all());
 
         $validated = $request->validate([
             'original_url' => 'required|url',

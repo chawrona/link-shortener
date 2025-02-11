@@ -10,4 +10,4 @@ Route::view('/links', 'app');
 
 Route::view('/notfound', 'app');
 
-Route::get('/{$shortened_url}', [LinkController::class, 'redirect']);
+Route::get('/{shortened_url}', [LinkController::class, 'redirect']);

@@ -3,7 +3,17 @@
 </script>
 
 <template>
-    <h1>Link shortener</h1>
-    <h2>Dawid Chawrona</h2>
-    <RouterView />
+    <div class="app-container">
+        <RouterView />
+    </div>
 </template>
+
+<style scoped>
+    .app-container {
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        width: 100%;
+
+    }
+</style>
